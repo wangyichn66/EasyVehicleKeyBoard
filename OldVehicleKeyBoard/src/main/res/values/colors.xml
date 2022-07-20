@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <color name="keyboard_dark_cell_bg_color">#FFD0D1D3</color>
+    <color name="white">#FFFFFFFF</color>
+    <!--阴影-->
+    <color name="shadowColor">#99898DA2</color>
+    <color name="black">#FF000000</color>
+    <color name="keyboard_bg_color">#E7E8EA</color>
+</resources>

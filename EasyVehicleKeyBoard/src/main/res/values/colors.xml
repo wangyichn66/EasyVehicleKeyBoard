@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#FF000000</color>
+    <color name="keyboard_bg_color">#E7E8EA</color>
+    <color name="keyboard_dark_cell_bg_color">#FFD0D1D3</color>
+    <color name="keyText">#FF030303</color>
+    <color name="shadow">#42313131</color>
+</resources>

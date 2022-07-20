@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:id="@+id/rootLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.hjq.shape.layout.ShapeConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:layout_width="match_parent"
+                app:layout_constraintTop_toTopOf="@id/iv_hide"
+                android:layout_marginTop="20dp"
+                android:background="@color/keyboard_bg_color"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_height="0dp"/>
+
+            <ImageView
+                android:id="@+id/iv_hide"
+                android:layout_width="40dp"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_height="40dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:src="@drawable/hide_key_board"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </com.hjq.shape.layout.ShapeConstraintLayout>
+
+        <LinearLayout
+            android:background="@color/keyboard_bg_color"
+            android:id="@+id/ll_letters"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingStart="3dp"
+                android:paddingTop="3dp"
+                android:paddingEnd="3dp">
+
+                <com.hjq.shape.view.ShapeTextView
+                    android:id="@+id/tv_1"
+                    style="@style/VehicleKeyboardKey"
+                    android:text="1" />
+
+                <com.hjq.shape.view.ShapeTextView
+                    android:id="@+id/tv_2"
+                    style="@style/VehicleKeyboardKey"
+                    android:text="2" />
+
+                <com.hjq.shape.view.ShapeTextView
+                    android:id="@+id/tv_3"
+                    style="@style/VehicleKeyboardKey"
+                    android:text="3" />
+
+                <com.hjq.shape.view.ShapeTextView
+                    android:id="@+id/tv_4"
+                    style="@style/VehicleKeyboardKey"
+                    android:text="4" />
+
+                <com.hjq.shape.view.ShapeTextView
+                    android:id="@+id/tv_5"
+                    style="@style/VehicleKeyboardKey"
+                    android:text="5" />
+
+                <com.hjq.shape.view.ShapeTextView
+                    android:id="@+id/tv_6"
+                    style="@style/VehicleKeyboardKey"
+                    android:text="6" />
+
+                <com.hjq.shape.view.ShapeTextView
+                    android:id="@+id/tv_7"
+                    style="@style/VehicleKeyboardKey"
+                    android:text="7" />
+
+                <com.hjq.shape.view.ShapeTextView
+                    android:id="@+id/tv_8"
+                    style="@style/VehicleKeyboardKey"
+                    android:text="8" />
+
+                <com.hjq.shape.view.ShapeTextView
+                    android:id="@+id/tv_9"
+                    style="@style/VehicleKeyboardKey"
+                    android:text="9" />
+
+                <com.hjq.shape.view.ShapeTextView
+                    android:id="@+id/tv_10"
+                    style="@style/VehicleKeyboardKey"
+                    android:text="0" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingStart="3dp"
+                android:paddingEnd="3dp">
+
+                <com.hjq.shape.view.ShapeTextView
+                    android:id="@+id/tv_11"
+                    style="@style/VehicleKeyboardKey"
+                    android:text="Q" />
+
+                <com.hjq.shape.view.ShapeTextView
+                    android:id="@+id/tv_12"
+                    style="@style/VehicleKeyboardKey"
+                    android:text="W" />
+
+                <com.hjq.shape.view.ShapeTextView
+                    android:id="@+id/tv_13"
+                    style="@style/VehicleKeyboardKey"
+                    android:text="E" />
+
+                <com.hjq.shape.view.ShapeTextView
+                    android:id="@+id/tv_14"
+                    style="@style/VehicleKeyboardKey"
+                    android:text="R" />
+
+                <com.hjq.shape.view.ShapeTextView
+                    android:id="@+id/tv_15"
+                    style="@style/VehicleKeyboardKey"
+                    android:text="T" />
+
+                <com.hjq.shape.view.ShapeTextView
+                    android:id="@+id/tv_16"
+                    style="@style/VehicleKeyboardKey"
+                    android:text="Y" />
+
+                <com.hjq.shape.view.ShapeTextView
+                    android:id="@+id/tv_17"
+                    style="@style/VehicleKeyboardKey"
+                    android:text="U" />
+
+                <com.hjq.shape.view.ShapeTextView
+                    android:id="@+id/tv_18"
+                    style="@style/VehicleKeyboardKeyDisable"
+                    android:text="I" />
+
+                <com.hjq.shape.view.ShapeTextView
+                    android:id="@+id/tv_19"
+                    style="@style/VehicleKeyboardKeyDisable"
+                    android:text="O" />
+
+                <com.hjq.shape.view.ShapeTextView
+                    android:id="@+id/tv_20"
+                    style="@style/VehicleKeyboardKey"
+                    android:text="P" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp">
+
+                <com.hjq.shape.view.ShapeTextView
+                    android:id="@+id/tv_21"
+                    style="@style/VehicleKeyboardKey"
+                    android:text="A" />
+
+                <com.hjq.shape.view.ShapeTextView
+                    android:id="@+id/tv_22"
+                    style="@style/VehicleKeyboardKey"
+                    android:text="S" />
+
+                <com.hjq.shape.view.ShapeTextView
+                    android:id="@+id/tv_23"
+                    style="@style/VehicleKeyboardKey"
+                    android:text="D" />
+
+                <com.hjq.shape.view.ShapeTextView
+                    android:id="@+id/tv_24"
+                    style="@style/VehicleKeyboardKey"
+                    android:text="F" />
+
+                <com.hjq.shape.view.ShapeTextView
+                    android:id="@+id/tv_25"
+                    style="@style/VehicleKeyboardKey"
+                    android:text="G" />
+
+                <com.hjq.shape.view.ShapeTextView
+                    android:id="@+id/tv_26"
+                    style="@style/VehicleKeyboardKey"
+                    android:text="H" />
+
+                <com.hjq.shape.view.ShapeTextView
+                    android:id="@+id/tv_27"
+                    style="@style/VehicleKeyboardKey"
+                    android:text="J" />
+
+                <com.hjq.shape.view.ShapeTextView
+                    android:id="@+id/tv_28"
+                    style="@style/VehicleKeyboardKey"
+                    android:text="K" />
+
+                <com.hjq.shape.view.ShapeTextView
+                    android:id="@+id/tv_29"
+                    style="@style/VehicleKeyboardKey"
+                    android:text="L" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingStart="3dp"
+                android:paddingEnd="3dp"
+                android:paddingBottom="3dp">
+
+                <com.hjq.shape.view.ShapeTextView
+                    android:id="@+id/tv_province"
+                    style="@style/VehicleKeyboardKeyDisable"
+                    android:layout_weight="2"
+                    android:text="省份" />
+
+                <com.hjq.shape.view.ShapeTextView
+                    android:id="@+id/tv_30"
+                    style="@style/VehicleKeyboardKey"
+                    android:text="Z" />
+
+                <com.hjq.shape.view.ShapeTextView
+                    android:id="@+id/tv_31"
+                    style="@style/VehicleKeyboardKey"
+                    android:text="X" />
+
+                <com.hjq.shape.view.ShapeTextView
+                    android:id="@+id/tv_32"
+                    style="@style/VehicleKeyboardKey"
+                    android:text="C" />
+
+                <com.hjq.shape.view.ShapeTextView
+                    android:id="@+id/tv_33"
+                    style="@style/VehicleKeyboardKey"
+                    android:text="V" />
+
+                <com.hjq.shape.view.ShapeTextView
+                    android:id="@+id/tv_34"
+                    style="@style/VehicleKeyboardKey"
+                    android:text="B" />
+
+                <com.hjq.shape.view.ShapeTextView
+                    android:id="@+id/tv_35"
+                    style="@style/VehicleKeyboardKey"
+                    android:text="N" />
+
+                <com.hjq.shape.view.ShapeTextView
+                    android:id="@+id/tv_36"
+                    style="@style/VehicleKeyboardKey"
+                    android:text="M" />
+
+                <com.hjq.shape.view.ShapeImageView
+                    android:id="@+id/iv_clear"
+                    style="@style/VehicleKeyboardKeyDisable"
+                    android:layout_weight="2"
+
+                    android:scaleType="center"
+                    android:src="@drawable/ic_keyboard_delete" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_provinces"
+            android:background="@color/keyboard_bg_color"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingStart="3dp"
+                android:paddingTop="3dp"
+                android:paddingEnd="3dp">
+
+                <com.hjq.shape.view.ShapeTextView
+                    android:id="@+id/tv_p1"
+                    style="@style/VehicleKeyboardKey"
+                    android:text="京" />
+
+                <com.hjq.shape.view.ShapeTextView
+                    android:id="@+id/tv_p2"
+                    style="@style/VehicleKeyboardKey"
+                    android:text="津" />
+
+                <com.hjq.shape.view.ShapeTextView
+                    android:id="@+id/tv_p3"
+                    style="@style/VehicleKeyboardKey"
+                    android:text="渝" />
+
+                <com.hjq.shape.view.ShapeTextView
+                    android:id="@+id/tv_p4"
+                    style="@style/VehicleKeyboardKey"
+                    android:text="沪" />
+
+                <com.hjq.shape.view.ShapeTextView
+                    android:id="@+id/tv_p5"
+                    style="@style/VehicleKeyboardKey"
+                    android:text="冀" />
+
+                <com.hjq.shape.view.ShapeTextView
+                    android:id="@+id/tv_p6"
+                    style="@style/VehicleKeyboardKey"
+                    android:text="晋" />
+
+                <com.hjq.shape.view.ShapeTextView
+                    android:id="@+id/tv_p7"
+                    style="@style/VehicleKeyboardKey"
+                    android:text="辽" />
+
+                <com.hjq.shape.view.ShapeTextView
+                    android:id="@+id/tv_p8"
+                    style="@style/VehicleKeyboardKey"
+                    android:text="吉" />
+
+                <com.hjq.shape.view.ShapeTextView
+                    android:id="@+id/tv_p9"
+                    style="@style/VehicleKeyboardKey"
+                    android:text="黑" />
+
+                <com.hjq.shape.view.ShapeTextView
+                    android:id="@+id/tv_p10"
+                    style="@style/VehicleKeyboardKey"
+                    android:text="苏" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingStart="3dp"
+                android:paddingEnd="3dp">
+
+                <com.hjq.shape.view.ShapeTextView
+                    android:id="@+id/tv_p11"
+                    style="@style/VehicleKeyboardKey"
+                    android:text="浙" />
+
+                <com.hjq.shape.view.ShapeTextView
+                    android:id="@+id/tv_p12"
+                    style="@style/VehicleKeyboardKey"
+                    android:text="皖" />
+
+                <com.hjq.shape.view.ShapeTextView
+                    android:id="@+id/tv_p13"
+                    style="@style/VehicleKeyboardKey"
+                    android:text="闽" />
+
+                <com.hjq.shape.view.ShapeTextView
+                    android:id="@+id/tv_p14"
+                    style="@style/VehicleKeyboardKey"
+                    android:text="赣" />
+
+                <com.hjq.shape.view.ShapeTextView
+                    android:id="@+id/tv_p15"
+                    style="@style/VehicleKeyboardKey"
+                    android:text="鲁" />
+
+                <com.hjq.shape.view.ShapeTextView
+                    android:id="@+id/tv_p16"
+                    style="@style/VehicleKeyboardKey"
+                    android:text="豫" />
+
+                <com.hjq.shape.view.ShapeTextView
+                    android:id="@+id/tv_p17"
+                    style="@style/VehicleKeyboardKey"
+                    android:text="鄂" />
+
+                <com.hjq.shape.view.ShapeTextView
+                    android:id="@+id/tv_p18"
+                    style="@style/VehicleKeyboardKey"
+                    android:text="湘" />
+
+                <com.hjq.shape.view.ShapeTextView
+                    android:id="@+id/tv_p19"
+                    style="@style/VehicleKeyboardKey"
+                    android:text="粤" />
+
+                <com.hjq.shape.view.ShapeTextView
+                    android:id="@+id/tv_p20"
+                    style="@style/VehicleKeyboardKey"
+                    android:text="琼" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingStart="3dp"
+                android:paddingEnd="3dp">
+
+                <com.hjq.shape.view.ShapeTextView
+                    android:id="@+id/tv_p21"
+                    style="@style/VehicleKeyboardKey"
+                    android:text="川" />
+
+                <com.hjq.shape.view.ShapeTextView
+                    android:id="@+id/tv_p22"
+                    style="@style/VehicleKeyboardKey"
+                    android:text="贵" />
+
+                <com.hjq.shape.view.ShapeTextView
+                    android:id="@+id/tv_p23"
+                    style="@style/VehicleKeyboardKey"
+                    android:text="云" />
+
+                <com.hjq.shape.view.ShapeTextView
+                    android:id="@+id/tv_p24"
+                    style="@style/VehicleKeyboardKey"
+                    android:text="陕" />
+
+                <com.hjq.shape.view.ShapeTextView
+                    android:id="@+id/tv_p25"
+                    style="@style/VehicleKeyboardKey"
+                    android:text="甘" />
+
+                <com.hjq.shape.view.ShapeTextView
+                    android:id="@+id/tv_p26"
+                    style="@style/VehicleKeyboardKey"
+                    android:text="青" />
+
+                <com.hjq.shape.view.ShapeTextView
+                    android:id="@+id/tv_p27"
+                    style="@style/VehicleKeyboardKey"
+                    android:text="蒙" />
+
+                <com.hjq.shape.view.ShapeTextView
+                    android:id="@+id/tv_p28"
+                    style="@style/VehicleKeyboardKey"
+                    android:text="桂" />
+
+                <com.hjq.shape.view.ShapeTextView
+                    android:id="@+id/tv_p29"
+                    style="@style/VehicleKeyboardKey"
+                    android:text="宁" />
+
+                <com.hjq.shape.view.ShapeTextView
+                    android:id="@+id/tv_p30"
+                    style="@style/VehicleKeyboardKey"
+                    android:text="新" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingStart="3dp"
+                android:paddingEnd="3dp"
+                android:paddingBottom="3dp">
+
+                <com.hjq.shape.view.ShapeTextView
+                    android:id="@+id/tv_ABC"
+                    style="@style/VehicleKeyboardKeyDisable"
+                    android:layout_weight="2"
+                    android:text="ABC" />
+
+                <com.hjq.shape.view.ShapeTextView
+                    android:id="@+id/tv_p31"
+                    style="@style/VehicleKeyboardKey"
+                    android:text="藏" />
+
+                <com.hjq.shape.view.ShapeTextView
+                    android:id="@+id/tv_p32"
+                    style="@style/VehicleKeyboardKey"
+                    android:text="使" />
+
+                <com.hjq.shape.view.ShapeTextView
+                    android:id="@+id/tv_p33"
+                    style="@style/VehicleKeyboardKey"
+                    android:text="领" />
+
+                <com.hjq.shape.view.ShapeTextView
+                    android:id="@+id/tv_p34"
+                    style="@style/VehicleKeyboardKey"
+                    android:text="警" />
+
+                <com.hjq.shape.view.ShapeTextView
+                    android:id="@+id/tv_p35"
+                    style="@style/VehicleKeyboardKey"
+                    android:text="学" />
+
+                <com.hjq.shape.view.ShapeTextView
+                    android:id="@+id/tv_p36"
+                    style="@style/VehicleKeyboardKey"
+                    android:text="港" />
+
+                <com.hjq.shape.view.ShapeTextView
+                    android:id="@+id/tv_p37"
+                    style="@style/VehicleKeyboardKey"
+                    android:text="澳" />
+
+                <com.hjq.shape.view.ShapeImageView
+                    android:id="@+id/iv_clear2"
+                    style="@style/VehicleKeyboardKeyDisable"
+                    android:layout_weight="2"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_keyboard_delete" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>
